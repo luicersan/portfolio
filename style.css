@@ -1,0 +1,47 @@
+/* styles.css */
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header, main, footer {
+    padding: 20px;
+  }
+  
+  h1, h2 {
+    color: #333;
+  }
+  
+  p, ul {
+    color: #666;
+  }
+  
+  /* Estilos específicos para el header */
+  header {
+    background-color: #f2f2f2;
+  }
+  
+  /* Estilos específicos para las habilidades */
+  #habilidades ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  #habilidades li {
+    text-align: center;
+    margin: 0 20px;
+  }
+  
+  #habilidades img {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 10px;
+  }
+  
+  /* Agrega más estilos CSS según tus necesidades */
+  
