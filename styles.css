@@ -1,5 +1,3 @@
-/* styles.css */
-
 /* Estilos generales */
 body {
   font-family: Arial, sans-serif;
@@ -55,9 +53,12 @@ h2 {
 .switch-container {
   display: flex;
   align-items: center;
-  position: absolute; /* Cambia a posición absoluta */
-  top: 15px; /* Ajusta la posición vertical según tu preferencia */
-  right: 30px; /* Ajusta la posición horizontal según tu preferencia */
+  position: absolute;
+  /* Cambia a posición absoluta */
+  top: 15px;
+  /* Ajusta la posición vertical según tu preferencia */
+  right: 30px;
+  /* Ajusta la posición horizontal según tu preferencia */
   background-color: transparent;
 }
 
@@ -79,25 +80,30 @@ h2 {
 }
 
 .switch-icon {
-  margin-left: 5px; /* Ajusta el valor según tu preferencia */
+  margin-left: 5px;
+  /* Ajusta el valor según tu preferencia */
 }
 
 .switch-icon::before {
   font-family: 'Material Icons';
   font-size: 24px;
   vertical-align: middle;
-  content: 'wb_sunny'; /* Icono del sol cuando está desactivado */
+  content: 'wb_sunny';
+  /* Icono del sol cuando está desactivado */
 }
 
 .modo-noche .switch-icon::before {
   background-color: transparent;
-  content: '\e51c'; /* Icono de la luna cuando está activado */
-  transition: background-color 0.5s; /* Agrega la transición */
+  content: '\e51c';
+  /* Icono de la luna cuando está activado */
+  transition: background-color 0.5s;
+  /* Agrega la transición */
 }
 
 .modo-noche .switch-icon {
   background-color: #444;
-  transition: background-color 0s 0.5s; /* Retrasa la transición */
+  transition: background-color 0s 0.5s;
+  /* Retrasa la transición */
 }
 
 .slider {
@@ -108,7 +114,8 @@ h2 {
   right: 0;
   bottom: 0;
   background-color: #ccc;
-  border-radius: 34px; /* Agrega esta propiedad para hacerlo circular */
+  border-radius: 34px;
+  /* Agrega esta propiedad para hacerlo circular */
   transition: .4s;
 }
 
@@ -120,15 +127,16 @@ h2 {
   left: 2px;
   bottom: 2px;
   background-color: white;
-  border-radius: 50%; /* Agrega esta propiedad para hacerlo circular */
+  border-radius: 50%;
+  /* Agrega esta propiedad para hacerlo circular */
   transition: .4s;
 }
 
-input:checked + .slider {
+input:checked+.slider {
   background-color: #121212;
 }
 
-input:checked + .slider:before {
+input:checked+.slider:before {
   transform: translateX(20px);
 }
 
