@@ -13,6 +13,125 @@ footer {
   padding: 20px;
 }
 
+/* Estilos generales */
+html {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.5s, color 0.5s;
+  position: relative;
+}
+
+header {
+  background-color: #f2f2f2;
+  padding: 20px;
+  transition: background-color 0.5s;
+  color: #333;
+}
+
+.profile {
+  margin-left: 10%;
+  margin-right: 10%;
+  display: flex;
+}
+
+h2 {
+  margin-left: 13%;
+}
+
+.modo-noche {
+  background-color: #121212;
+  color: #fff;
+}
+
+.modo-noche * {
+  color: #ffffffc2;
+}
+
+.modo-noche header {
+  background-color: #444;
+}
+
+.switch-container {
+  display: flex;
+  align-items: center;
+  position: absolute; /* Cambia a posición absoluta */
+  top: 15px; /* Ajusta la posición vertical según tu preferencia */
+  right: 30px; /* Ajusta la posición horizontal según tu preferencia */
+  background-color: transparent;
+}
+
+.switch-label {
+  margin-left: 10px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.switch-icon {
+  margin-left: 5px; /* Ajusta el valor según tu preferencia */
+}
+
+.switch-icon::before {
+  font-family: 'Material Icons';
+  font-size: 24px;
+  vertical-align: middle;
+  content: 'wb_sunny'; /* Icono del sol cuando está desactivado */
+}
+
+.modo-noche .switch-icon::before {
+  background-color: transparent;
+  content: '\e51c'; /* Icono de la luna cuando está activado */
+  transition: background-color 0.5s; /* Agrega la transición */
+}
+
+.modo-noche .switch-icon {
+  background-color: #444;
+  transition: background-color 0s 0.5s; /* Retrasa la transición */
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  border-radius: 34px; /* Agrega esta propiedad para hacerlo circular */
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  border-radius: 50%; /* Agrega esta propiedad para hacerlo circular */
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #121212;
+}
+
+input:checked + .slider:before {
+  transform: translateX(20px);
+}
+
 .profile {
   display: flex;
   align-items: center;
@@ -38,6 +157,14 @@ footer {
 
   .profile-picture {
     margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .switch-container {
+    position: static;
+    margin-top: 10px;
+    margin-bottom: 20px;
   }
 }
 
