@@ -1,17 +1,13 @@
-/* Estilos generales */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
 
-header,
-main,
-footer {
+main {
   padding: 20px;
 }
 
-/* Estilos generales */
 html {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -27,6 +23,21 @@ header {
   color: #333;
 }
 
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #f2f2f2;
+  color: #333;
+  text-align: left;
+}
+
+footer p {
+  margin: 20px;
+  margin-left: 10%;
+}
+
 .profile {
   margin-left: 10%;
   margin-right: 10%;
@@ -37,16 +48,17 @@ h2 {
   margin-left: 13%;
 }
 
+/*Estilos para el modo noche*/
 .modo-noche {
   background-color: #121212;
-  color: #fff;
 }
 
 .modo-noche * {
   color: #ffffffc2;
 }
 
-.modo-noche header {
+.modo-noche header,
+.modo-noche footer {
   background-color: #444;
 }
 
@@ -54,11 +66,8 @@ h2 {
   display: flex;
   align-items: center;
   position: absolute;
-  /* Cambia a posición absoluta */
   top: 15px;
-  /* Ajusta la posición vertical según tu preferencia */
   right: 30px;
-  /* Ajusta la posición horizontal según tu preferencia */
   background-color: transparent;
 }
 
@@ -186,40 +195,23 @@ ul {
   color: #666;
 }
 
-/* Estilos específicosf para el header */
 header {
   background-color: #f2f2f2;
 }
 
-/* Estilos específicos para las habilidades */
+/* Estilos para la sección de habilidades */
 #habilidades ul {
   list-style: none;
   padding: 0;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  /* Responsiveness */
-}
-
-#contacto li {
-  text-align: center;
-  margin: 10px;
-  flex-basis: 100px;
 }
 
 #habilidades img {
   width: 64px;
   height: 64px;
   margin-bottom: 10px;
-}
-
-#habilidades ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  /* Responsiveness */
 }
 
 #habilidades li {
@@ -232,17 +224,21 @@ header {
   display: inline-block;
   padding: 10px 20px;
   background-color: #333;
-  color: #fff;
+  color: #fff !important;
   text-decoration: none;
   border-radius: 5px;
   border: none;
   transition: background-color 0.3s ease;
+  margin-top: 10px;
+  transition: 0.5s;
 }
 
 .btn:hover {
   background-color: #008080;
+  transform: translateY(-5px);
 }
 
+/* Estilos para la sección de contacto */
 #contacto {
   margin-top: 40px;
 }
@@ -253,6 +249,28 @@ header {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+}
+
+.contacto-container i {
+  margin-right: 5px
+}
+
+.contacto-container a {
+  margin-right: 5px;
+  text-decoration: none;
+  color: #333;
+  transition: 0.5s;
+}
+
+.contacto-container a:hover {
+  color: #008080 !important;
+  transform: translateY(-5px);
+}
+
+.modo-noche .contacto-container a {
+  text-decoration: none;
+  color: #ffffffc2;
+  transition: 0.5s;
 }
 
 .contacto-item {
@@ -266,10 +284,6 @@ header {
   color: #333;
 }
 
-.btn {
-  margin-top: 10px;
-}
-
 .contacto-item a i {
   font-size: 24px;
   margin-right: 5px;
@@ -280,5 +294,24 @@ header {
 }
 
 .contacto-item a:hover {
-  color: #666;
+  color: #008080;
+}
+
+.modo-noche #contacto i:hover {
+  color: #008080;
+}
+
+.social-icons a {
+  text-decoration: none;
+  font-size: 20px;
+  margin-right: 15px;
+  margin-top: 10px;
+  color: #333;
+  display: inline-block;
+  transition: 0.5s;
+}
+
+.social-icons a:hover {
+  color: #008080;
+  transform: translateY(-5px);
 }
