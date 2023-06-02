@@ -209,7 +209,7 @@ ul {
 #habilidades li {
   text-align: center;
   margin: 10px;
-  flex-basis: 100px;
+  flex-basis: 90px;
 }
 
 .btn {
@@ -330,30 +330,6 @@ section {
   text-decoration: none;
   color: #ffffffc2;
   transition: 0.5s;
-}
-
-.contacto-item {
-  margin-right: 20px;
-}
-
-.contacto-item a {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  color: #333;
-}
-
-.contacto-item a i {
-  font-size: 24px;
-  margin-right: 5px;
-}
-
-.contacto-item a span {
-  font-size: 16px;
-}
-
-.contacto-item a:hover {
-  color: #008080;
 }
 
 .modo-noche #contacto i:hover {
